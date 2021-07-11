@@ -1634,6 +1634,78 @@ case "$DEVICE" in
             -e 's block/platform/soc/1da4000.ufshc/by-name/xbl_b sdc1 ' \
             "$@"
         ;;
+
+    "nash")
+        sed -i \
+            -e 's block/bootdevice/by-name/abl_a sde11 ' \
+            -e 's block/bootdevice/by-name/abl_b sdf11 ' \
+            -e 's block/bootdevice/by-name/apdp sdb18 ' \
+            -e 's block/bootdevice/by-name/bluetooth_a sde15 ' \
+            -e 's block/bootdevice/by-name/bluetooth_b sdf15 ' \
+            -e 's block/bootdevice/by-name/boot_a sde17 ' \
+            -e 's block/bootdevice/by-name/boot_b sdf17 ' \
+            -e 's block/bootdevice/by-name/carrier sdb11 ' \
+            -e 's block/bootdevice/by-name/cid sdb7 ' \
+            -e 's block/bootdevice/by-name/cmnlib64_a sde8 ' \
+            -e 's block/bootdevice/by-name/cmnlib64_b sdf8 ' \
+            -e 's block/bootdevice/by-name/cmnlib_a sde7 ' \
+            -e 's block/bootdevice/by-name/cmnlib_b sdf7 ' \
+            -e 's block/bootdevice/by-name/ddr sda2 ' \
+            -e 's block/bootdevice/by-name/devcfg_a sde5 ' \
+            -e 's block/bootdevice/by-name/devcfg_b sdf5 ' \
+            -e 's block/bootdevice/by-name/devinfo sdb15 ' \
+            -e 's block/bootdevice/by-name/dpo sdb20 ' \
+            -e 's block/bootdevice/by-name/dsp_a sde14 ' \
+            -e 's block/bootdevice/by-name/dsp_b sdf14 ' \
+            -e 's block/bootdevice/by-name/dto_a sde20 ' \
+            -e 's block/bootdevice/by-name/dto_b sdf20 ' \
+            -e 's block/bootdevice/by-name/frp sdb4 ' \
+            -e 's block/bootdevice/by-name/fsc sdb14 ' \
+            -e 's block/bootdevice/by-name/fsg_a sde12 ' \
+            -e 's block/bootdevice/by-name/fsg_b sdf12 ' \
+            -e 's block/bootdevice/by-name/hw sda1 ' \
+            -e 's block/bootdevice/by-name/hyp_a sde3 ' \
+            -e 's block/bootdevice/by-name/hyp_b sdf3 ' \
+            -e 's block/bootdevice/by-name/keymaster_a sde6 ' \
+            -e 's block/bootdevice/by-name/keymaster_b sdf6 ' \
+            -e 's block/bootdevice/by-name/kpan sdb9 ' \
+            -e 's block/bootdevice/by-name/logfs sdb16 ' \
+            -e 's block/bootdevice/by-name/logo_a sde16 ' \
+            -e 's block/bootdevice/by-name/logo_b sdf16 ' \
+            -e 's block/bootdevice/by-name/metadata sdb8 ' \
+            -e 's block/bootdevice/by-name/misc sdb3 ' \
+            -e 's block/bootdevice/by-name/modem_a sde13 ' \
+            -e 's block/bootdevice/by-name/modem_b sdf13 ' \
+            -e 's block/bootdevice/by-name/modemst1 sdb12 ' \
+            -e 's block/bootdevice/by-name/modemst2 sdb13 ' \
+            -e 's block/bootdevice/by-name/msadp sdb19 ' \
+            -e 's block/bootdevice/by-name/oem_a sde19 ' \
+            -e 's block/bootdevice/by-name/oem_b sdf19 ' \
+            -e 's block/bootdevice/by-name/persist sdb2 ' \
+            -e 's block/bootdevice/by-name/pmic_a sde10 ' \
+            -e 's block/bootdevice/by-name/pmic_b sdf10 ' \
+            -e 's block/bootdevice/by-name/prov_a sde9 ' \
+            -e 's block/bootdevice/by-name/prov_b sdf9 ' \
+            -e 's block/bootdevice/by-name/rpm_a sde1 ' \
+            -e 's block/bootdevice/by-name/rpm_b sdf1 ' \
+            -e 's block/bootdevice/by-name/sec sdb17 ' \
+            -e 's block/bootdevice/by-name/sp sdb10 ' \
+            -e 's block/bootdevice/by-name/ssd sdb1 ' \
+            -e 's block/bootdevice/by-name/storsec_a sde4 ' \
+            -e 's block/bootdevice/by-name/storsec_b sdf4 ' \
+            -e 's block/bootdevice/by-name/system_a sde18 ' \
+            -e 's block/bootdevice/by-name/system_b sdf18 ' \
+            -e 's block/bootdevice/by-name/tz_a sde2 ' \
+            -e 's block/bootdevice/by-name/tz_b sdf2 ' \
+            -e 's block/bootdevice/by-name/userdata sdb21 ' \
+            -e 's block/bootdevice/by-name/utags sdb5 ' \
+            -e 's block/bootdevice/by-name/utagsBackup sdb6 ' \
+            -e 's block/bootdevice/by-name/vendor_a sde19 ' \
+            -e 's block/bootdevice/by-name/vendor_b sdf19 ' \
+            -e 's block/bootdevice/by-name/xbl_a sdc1 ' \
+            -e 's block/bootdevice/by-name/xbl_b sdd1 ' \
+            "$@"
+        ;;
     *)
         cat <<EOF
 
